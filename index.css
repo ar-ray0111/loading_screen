@@ -1,0 +1,39 @@
+body{
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+
+}
+
+.loading{
+    font-size: 1.2rem;
+    max-width: 50%;
+    display: block;
+    text-align: center;
+    color: beige;
+}
+
+.author{
+    color: lightslategray;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@keyframes rotate {
+    to{
+        transform: rotate(1turn);
+    }
+}
+.loading__thing{
+    display: inline-block;
+    border: 5px solid chartreuse;
+    border-left-color: #000;
+    border-top-color: #000;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    animation: rotate 300ms infinite linear;
+}
